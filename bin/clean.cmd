@@ -1,7 +1,8 @@
 @echo off
 
 set ROOT_DIR=.
-set VST_SDK_DIR=%ROOT_DIR%\lib\sdk\2.4
+set VST_SDK_DIR=%ROOT_DIR%\lib\vstsdk2.4
+::set VST_SDK_DIR=%ROOT_DIR%\lib\"VST3 SDK
 
 
 

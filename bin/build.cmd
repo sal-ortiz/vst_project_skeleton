@@ -1,7 +1,9 @@
 @echo off
 
 set ROOT_DIR=.
-set VST_SDK_DIR=%ROOT_DIR%\lib\sdk/2.4
+set VST_SDK_DIR=%ROOT_DIR%\lib\vstsdk2.4
+::set VST_SDK_DIR=%ROOT_DIR%\lib\"VST3 SDK
+
 set CXX_INCLUDES=-I"%VST_SDK_DIR%/pluginterfaces/vst2.x" -I"%VST_SDK_DIR%/public.sdk/source/vst2.x" -I"%VST_SDK_DIR%" -I"%VST_SDK_DIR%/vstgui.sf/vstgui" -I. 
 set CXX_FLAGS=%CXX_INCLUDES% -DBUILDING_DLL=1 -mwindows -O3 -m32
 
